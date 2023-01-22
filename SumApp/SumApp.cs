@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SumApp
 {
-    internal class SumApp
+    public static class SumApp
     {
         public static int Sum(int[] arr)
         {
             int sum = 0;
 
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
@@ -20,7 +20,7 @@ namespace SumApp
             return sum;
         }
 
-        public void Proba()
+        public static void Proba()
         {
             Console.WriteLine("Test");
         }
