@@ -20,9 +20,16 @@ namespace SumApp
             return sum;
         }
 
-        public static void Proba()
+        public static double Average(int[] arr)
         {
-            Console.WriteLine("Test");
+            int sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+
+            return sum/2;
         }
     }
 }

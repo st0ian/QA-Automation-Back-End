@@ -6,20 +6,47 @@ namespace SumApp.UnitTests
     public class Tests
     {
         [Test]
-        public void SumAppTests()
+        public void SumTwoNumbers()
         {
             var input = new int[] { 4, 6 };
+            var expectedResult = 10;
 
             var result = SumApp.Sum(input);
-            var expectedResult = 10;
+            
             Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         [Test]
-        public void TestA()
+        public void SumTwoNegative()
         {
-            SumApp.Proba();
+            var input = new int[] { -4, -6 };
+            var expectedResult = -10;
+
+            var result = SumApp.Sum(input);
+            
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
+        [Test]
+        public void SumEmptyArray()
+        {
+            var input = new int[] { };
+            var expectedResult = 0;
+
+            var result = SumApp.Sum(input);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void SumOneNumber()
+        {
+            var input = new int[] {1 };
+            var expectedResult = 1;
+
+            var result = SumApp.Sum(input);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
 }
