@@ -12,7 +12,7 @@ namespace SumApp.UnitTests
             var expectedResult = 10;
 
             var result = SumApp.Sum(input);
-            
+
             Assert.That(result, Is.EqualTo(expectedResult));
         }
 
@@ -23,7 +23,7 @@ namespace SumApp.UnitTests
             var expectedResult = -10;
 
             var result = SumApp.Sum(input);
-            
+
             Assert.That(result, Is.EqualTo(expectedResult));
         }
 
@@ -41,8 +41,19 @@ namespace SumApp.UnitTests
         [Test]
         public void SumOneNumber()
         {
-            var input = new int[] {1 };
+            var input = new int[] { 1 };
             var expectedResult = 1;
+
+            var result = SumApp.Sum(input);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void SumBugNumbers()
+        {
+            var input = new int[] {4000000, 4000000};
+            var expectedResult = 8000000;
 
             var result = SumApp.Sum(input);
 
