@@ -52,12 +52,18 @@ namespace SumApp.UnitTests
         [Test]
         public void SumBugNumbers()
         {
-            var input = new int[] {4000000, 4000000};
+            var input = new int[] { 4000000, 4000000 };
             var expectedResult = 8000000;
 
             var result = SumApp.Sum(input);
 
             Assert.That(result, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void SumNull()
+        {
+            Assert.That(() => SumApp.Sum(null), Throws.TypeOf<NullReferenceException>());
         }
     }
 }
