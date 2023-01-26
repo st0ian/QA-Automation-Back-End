@@ -1,14 +1,13 @@
 using NUnit.Framework;
-using SumApp;
 
 namespace SumApp.UnitTests
 {
-    public class Tests
+    public class Sum
     {
         [Test]
-        public void SumTwoNumbers()
+        public void MultipleNumbers_ReturnsResult()
         {
-            var input = new int[] { 4, 6 };
+            var input = new int[] { -4, -6, 4, 6, 10 };
             var expectedResult = 10;
 
             var result = SumApp.Sum(input);
@@ -17,7 +16,18 @@ namespace SumApp.UnitTests
         }
 
         [Test]
-        public void SumTwoNegative()
+        public void TwoNumbers_ReturnsResult()
+        {
+            var input = new int[] { 4, 6 };
+            var expectedResult = 10;
+
+            var result = SumApp.Sum(input);
+            
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void TwoNegative_ReturnsResult()
         {
             var input = new int[] { -4, -6 };
             var expectedResult = -10;
@@ -28,7 +38,7 @@ namespace SumApp.UnitTests
         }
 
         [Test]
-        public void SumEmptyArray()
+        public void EmptyArray_ReturnsZero()
         {
             var input = new int[] { };
             var expectedResult = 0;
@@ -39,7 +49,7 @@ namespace SumApp.UnitTests
         }
 
         [Test]
-        public void SumOneNumber()
+        public void OneNumber_ReturnsResult()
         {
             var input = new int[] { 1 };
             var expectedResult = 1;
@@ -50,7 +60,7 @@ namespace SumApp.UnitTests
         }
 
         [Test]
-        public void SumBugNumbers()
+        public void BugNumbers_ReturnsResult()
         {
             var input = new int[] { 4000000, 4000000 };
             var expectedResult = 8000000;
@@ -61,7 +71,7 @@ namespace SumApp.UnitTests
         }
 
         [Test]
-        public void SumNull()
+        public void Null_ThrowsNullException()
         {
             Assert.That(() => SumApp.Sum(null), Throws.TypeOf<NullReferenceException>());
         }
