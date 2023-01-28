@@ -8,10 +8,12 @@ namespace Collections.UnitTests
         }
 
         [Test]
-        public void Test1()
+        public void ExchangeTwoIndex()
         {
-            // neq change
-            Assert.Pass();
+            Collection<int> collection_2 = new Collection<int>(new int[] { 1, 2});
+            collection_2.Exchange(1, 2);
+
+            Assert.That()
         }
     }
 }

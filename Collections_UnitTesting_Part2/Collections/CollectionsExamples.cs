@@ -15,12 +15,15 @@ namespace Collections
             Console.WriteLine($"Count: {nums.Count}. Capacity: {nums.Capacity}");
             Console.WriteLine();
 
-
             Console.WriteLine(new string('=', 120));
 
             Collection<int> collection_10  = new Collection<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
             Console.WriteLine($"Collection with 10 numbers: {collection_10}");
             Console.WriteLine($"Count: {collection_10.Count} | Capacity (is Count x 2): {collection_10.Capacity}");
+            Console.WriteLine();
+
+            Console.WriteLine($"Cleared: {collection_10}");
+            Console.WriteLine($"Cleared Count: {collection_10.Count} | Capacity (is Count x 2): {collection_10.Capacity}");
             Console.WriteLine();
 
             int [] testWith5 = new int[5];

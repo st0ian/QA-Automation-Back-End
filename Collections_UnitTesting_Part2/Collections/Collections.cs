@@ -7,7 +7,7 @@ namespace Collections
     {
         private const int InitialCapacity = 16;
         private T[] items;
-        public int Capacity => this.items.Length;
+        public int Capacity { get; set; }
         public int Count { get; private set; }
 
         public Collection(params T[] items)
@@ -17,6 +17,7 @@ namespace Collections
             for (int i = 0; i < items.Length; i++)
                 this.items[i] = items[i];
             this.Count = items.Length;
+            this.Capacity = capacity;
         }
 
         public void Add(T item)
@@ -99,6 +100,7 @@ namespace Collections
         public void Clear()
         {
             this.Count = 0;
+            this.Capacity = InitialCapacity;
         }
 
         public override string ToString()
