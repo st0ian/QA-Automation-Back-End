@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "akD9U7B4x2lVjDvifwTj72awfuHzcvV/rPAvx7zZxh2GPd97W77cVp+iZcAb+RZ/9oxqfpM/Pk5YPvGC6hIbKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Longo\\Desktop\\Repos\\QA_Automation_BE\\RestSharp\\RestSharpDemoProject\\RestSharpDemoProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Longo\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

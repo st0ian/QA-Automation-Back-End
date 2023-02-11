@@ -1,0 +1,15 @@
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\bin\Debug\net6.0\RestSharpDemoProject.exe
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\bin\Debug\net6.0\RestSharpDemoProject.deps.json
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\bin\Debug\net6.0\RestSharpDemoProject.runtimeconfig.json
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\bin\Debug\net6.0\RestSharpDemoProject.dll
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\bin\Debug\net6.0\RestSharpDemoProject.pdb
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.csproj.AssemblyReference.cache
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.AssemblyInfoInputs.cache
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.AssemblyInfo.cs
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.csproj.CoreCompileInputs.cache
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.dll
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\refint\RestSharpDemoProject.dll
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.pdb
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\RestSharpDemoProject.genruntimeconfig.cache
+C:\Users\Longo\Desktop\Repos\QA_Automation_BE\RestSharp\RestSharpDemoProject\obj\Debug\net6.0\ref\RestSharpDemoProject.dll
