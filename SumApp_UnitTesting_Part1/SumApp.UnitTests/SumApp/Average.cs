@@ -5,33 +5,11 @@ namespace SumApp.UnitTests
     internal class Average
     {
         [Test]
-        public void TwoNumbers_ReturnsResult()
+        [TestCase(new int[] { 4, 6 }, 5)]
+        [TestCase(new int[] { -4, -6 }, -5)]
+        [TestCase(new int[] { -4, -6, 4, 6, 10 }, 5)]
+        public void MultipleNumbers_ReturnsResult(int[] input, double expectedResult)
         {
-            var input = new int[] { 4, 6 };
-            var expectedResult = 5;
-
-            var result = SumApp.Average(input);
-
-            Assert.That(result, Is.EqualTo(expectedResult));
-        }
-
-        [Test]
-        public void TwoNegative_ReturnsResult()
-        {
-            var input = new int[] { -4, -6 };
-            var expectedResult = -5;
-
-            var result = SumApp.Average(input);
-
-            Assert.That(result, Is.EqualTo(expectedResult));
-        }
-
-        [Test]
-        public void MultipleNumbers_ReturnsResult()
-        {
-            var input = new int[] { -4, -6, 4, 6, 10 };
-            var expectedResult = 5;
-
             var result = SumApp.Average(input);
 
             Assert.That(result, Is.EqualTo(expectedResult));

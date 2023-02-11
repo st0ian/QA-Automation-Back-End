@@ -5,32 +5,23 @@ namespace SumApp.UnitTests
     public class Sum
     {
         [Test]
-        public void MultipleNumbers_ReturnsResult()
+        [TestCase(new int[] { -4, -6, 4, 6, 10 }, 10)]
+        [TestCase(new int[] { 4, 6 }, 10)]
+        [TestCase(new int[] { -4, -6 }, -10)]
+        [TestCase(new int[] { 0, 5, -5 }, 0)]
+        public void SumNumbers_ReturnsResult(int[] input, int expectedResult)
         {
-            var input = new int[] { -4, -6, 4, 6, 10 };
-            var expectedResult = 10;
-
             var result = SumApp.Sum(input);
 
             Assert.That(result, Is.EqualTo(expectedResult));
         }
 
-        [Test]
-        public void TwoNumbers_ReturnsResult()
-        {
-            var input = new int[] { 4, 6 };
-            var expectedResult = 10;
-
-            var result = SumApp.Sum(input);
-            
-            Assert.That(result, Is.EqualTo(expectedResult));
-        }
 
         [Test]
-        public void TwoNegative_ReturnsResult()
+        public void OneNumber_ReturnsResult()
         {
-            var input = new int[] { -4, -6 };
-            var expectedResult = -10;
+            var input = new int[] { 1 };
+            var expectedResult = 1;
 
             var result = SumApp.Sum(input);
 
@@ -42,17 +33,6 @@ namespace SumApp.UnitTests
         {
             var input = new int[] { };
             var expectedResult = 0;
-
-            var result = SumApp.Sum(input);
-
-            Assert.That(result, Is.EqualTo(expectedResult));
-        }
-
-        [Test]
-        public void OneNumber_ReturnsResult()
-        {
-            var input = new int[] { 1 };
-            var expectedResult = 1;
 
             var result = SumApp.Sum(input);
 
