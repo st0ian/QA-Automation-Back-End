@@ -25,5 +25,6 @@ jobs:
       working-directory: SumApp_UnitTesting_Part1//SumApp
     - name: Build
       run: dotnet build --no-restore
+      working-directory: SumApp_UnitTesting_Part1//SumApp
     - name: Test
       run: dotnet test --no-build --verbosity normal
