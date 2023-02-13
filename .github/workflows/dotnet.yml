@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: src/SumApp
+      working-directory: SumApp_UnitTesting_Part1//SumApp
     - name: Build
       run: dotnet build --no-restore
     - name: Test
