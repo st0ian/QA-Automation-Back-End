@@ -21,7 +21,7 @@ namespace SumApp.UnitTests
         public void OneNumber_ReturnsResult()
         {
             var input = new int[] { 1 };
-            var expectedResult = 1;
+            var expectedResult = 0;
 
             var result = SumApp.Sum(input);
 
